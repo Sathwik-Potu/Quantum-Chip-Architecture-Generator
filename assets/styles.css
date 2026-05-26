@@ -1,0 +1,97 @@
+/* QuantumChip AI — Global Styles */
+
+#MainMenu, footer, header { visibility: hidden; }
+
+.stApp, [data-testid="stAppViewContainer"] {
+  background: #060e1e !important;
+}
+.main .block-container {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  max-width: 1200px;
+}
+
+h1, h2, h3, h4 { color: #d4eef8 !important; }
+p, span, li     { color: #8eb8d4 !important; }
+label           { color: #9ec8e0 !important; font-weight: 500 !important; }
+
+/* Tabs */
+div[data-testid="stTabs"] > div:first-child {
+  background: #0a1528;
+  border: 1px solid #1e3a5c;
+  border-radius: 12px;
+  padding: 6px 8px;
+}
+div[data-testid="stTabs"] button {
+  color: #6a9ab8 !important;
+  font-weight: 600 !important;
+  font-size: 0.85rem !important;
+  border-radius: 8px !important;
+}
+div[data-testid="stTabs"] button[aria-selected="true"] {
+  color: #d4eef8 !important;
+  background: #1a3a5c !important;
+  border-bottom: 2px solid #38a0c8 !important;
+}
+
+/* Buttons */
+.stButton > button,
+[data-testid="stFormSubmitButton"] > button {
+  background: linear-gradient(135deg, #1a4a7c, #1e6a9a) !important;
+  color: #e8f4fc !important;
+  border: 1px solid #38a0c8 !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+}
+
+/* Inputs */
+.stTextInput > div > div > input {
+  background: #0d1b2e !important;
+  color: #d4eef8 !important;
+  border: 1px solid #2a5a80 !important;
+  border-radius: 10px !important;
+}
+
+/* Cards */
+.q-card {
+  background: linear-gradient(135deg, #0d1b2e, #12243c);
+  border: 1px solid #2a5a80;
+  border-radius: 12px;
+  padding: 1.1rem 1.4rem;
+  margin-bottom: 0.75rem;
+}
+.q-card-title { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em;
+                text-transform: uppercase; color: #6a9ab8; margin-bottom: 0.35rem; }
+.q-card-value { font-size: 1.65rem; font-weight: 700; color: #d4eef8; }
+.q-card-sub   { font-size: 0.78rem; color: #5a8aa8; margin-top: 4px; }
+
+/* Chat bubbles */
+.chat-user {
+  background: linear-gradient(135deg, #1a4a7c, #1e3a8a);
+  color: #e8f4fc; padding: 0.7rem 1.15rem;
+  border-radius: 18px 18px 4px 18px;
+  display: inline-block; max-width: 85%; font-size: 0.92rem;
+}
+.chat-bot {
+  background: #0d1b2e; color: #b8dce8;
+  border: 1px solid #2a5a80; padding: 0.7rem 1.15rem;
+  border-radius: 18px 18px 18px 4px;
+  display: inline-block; max-width: 95%; font-size: 0.92rem;
+}
+
+/* Spec table */
+.spec-table { width: 100%; border-collapse: collapse; }
+.spec-label { color: #6a9ab8; font-size: 0.82rem; padding: 5px 14px 5px 0; }
+.spec-value { color: #d4eef8; font-weight: 600; font-size: 0.85rem; padding: 5px 0; }
+
+/* Badges */
+.chip-tag {
+  display: inline-block; background: #0a1e34; color: #8ec8e8;
+  border: 1px solid #2a5a80; padding: 4px 10px;
+  border-radius: 20px; font-size: 0.75rem; margin: 3px;
+}
+.status-badge { display: inline-block; padding: 4px 12px; border-radius: 20px;
+                font-size: 0.72rem; font-weight: 700; }
+.badge-green  { background: #021a0e; color: #34d399; border: 1px solid #065f46; }
+.badge-yellow { background: #1a1500; color: #fbbf24; border: 1px solid #78350f; }
+.badge-red    { background: #1a0404; color: #f87171; border: 1px solid #7f1d1d; }
